@@ -84,8 +84,9 @@ router.get("/logout", async  (req,res)=>{
 
 router.get("/confirm/:id", async (req,res)=>
 {
-    const token= req.params.id
-    const data=jwt.verify(token,"123456")
+    try{
+      const token= req.params.id
+    const data=jwt.verify(token,process.env.SECRET)
     const user=await User.findOne({_id:data._id, "tokens.token":token})
      if(user)
      {
@@ -98,6 +99,11 @@ router.get("/confirm/:id", async (req,res)=>
        res.send({"error " : "Invalid Requests "})
      }
 
+    }
+    catch(e)
+    {
+    res.send({"ERROR":"Error Occured in Loading"})
+    }
 })
 
 
