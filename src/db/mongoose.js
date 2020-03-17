@@ -1,6 +1,6 @@
 let mongoose = require("mongoose");
 
-mongoose.connect('mongodb+srv://asapinsurance:qwerty123@cluster0-vlfvz.mongodb.net/test', {
+mongoose.connect(process.env.DB, {
     useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex:true,

@@ -12,10 +12,9 @@ app.use(userRoute);
 app.set("view engine" , ".hbs")
 const publicDirectoryPath = path.join(__dirname,'../')
 const nodemailer= require('nodemailer')
-
+const port=process.env.PORT || 3000
 var session = require('express-session')
 var flash = require('express-flash')
-console.log(process.env.DATA)
 const cookieParser= require("cookie-parser")
 app.use(cookieParser())
 
@@ -39,13 +38,9 @@ app.get("/user",(req,res)=>
     res.render("index")
 })
 
-app.get("/products",(req,res)=>
-{
 
-    res.render("product")
-})
 
-app.listen(3000,()=>
+app.listen(port,()=>
 {
     console.log("started at ", 3000 );
 })

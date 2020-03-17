@@ -50,7 +50,7 @@ const userSchema = new mongoose.Schema({
 })
 userSchema.statics.findByCredentials=async (email,password)=>
 {  
-  console.log("hbvujsdf")
+  
     const user=await User.findOne({email})
     if(!user)
     {
@@ -71,7 +71,7 @@ userSchema.statics.findByCredentials=async (email,password)=>
 userSchema.methods.generateToken=async function()
 {
   const user=this
-    const token=jwt.sign({_id: user._id.toString()},"123456")
+    const token=jwt.sign({_id: user._id.toString()},process.env.SECRET)
    user.tokens=user.tokens.concat({token})
     await user.save()
     return token
