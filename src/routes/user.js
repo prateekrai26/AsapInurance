@@ -133,7 +133,7 @@ router.post("/signup",async (req,res)=>
    try{
     const user= new User(req.body)
     const token=await user.generateToken();
-    const url =  "http://localhost:3000/confirm/" +  token 
+    const url =  process.env.URL +  token 
     Emails.sendEmail(user.email, url )
        res.cookie('auth-key',token)  
        res.render("welcome")
