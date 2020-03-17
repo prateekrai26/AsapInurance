@@ -50,10 +50,11 @@ const userSchema = new mongoose.Schema({
 })
 userSchema.statics.findByCredentials=async (email,password)=>
 {  
-  
+  console.log("hbvujsdf")
     const user=await User.findOne({email})
     if(!user)
     {
+      
         throw new Error("Unable to find User");
     }
 
@@ -61,7 +62,7 @@ userSchema.statics.findByCredentials=async (email,password)=>
 
     if(!isMatch)
     {
-        throw new Error("Wrong Details")
+        throw new Error("Wrong Password")
     }
     return user
 }

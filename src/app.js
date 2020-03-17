@@ -12,46 +12,20 @@ app.use(userRoute);
 app.set("view engine" , ".hbs")
 const publicDirectoryPath = path.join(__dirname,'../')
 const nodemailer= require('nodemailer')
-var flash = require('connect-flash')
-var session = require('express-session')
-app.use(session({
-    secret: "gbwuyjhfgduyhsagbdfuvygsauy",
-    resave: false,
-    saveUninitialized: false
-  }));
- app.use(flash())
 
+var session = require('express-session')
+var flash = require('express-flash')
+console.log(process.env.DATA)
 const cookieParser= require("cookie-parser")
 app.use(cookieParser())
 
 app.use(express.static(publicDirectoryPath))
-// const temp= new User({
-//     name:"Prateek",
-//     age:20,
-//     email:"hi.prateekrai@gmail.com",
-//     password:"2602",
-//     type:"Customer"
-// })
-// temp.save()
-
-// User.find({},(err,res)=>
-// {
-//     if(err){
-//     throw new Error("Error")
-//     return;
-//     }
-//     console.log(res);
-// })
-
-// User.find({_id:"5e355473c9a26948a83f6cf3"},(err,res)=>
-// {
-//     if(err){
-//     throw new Error("Error")
-//     return;
-//     }
-//     console.log(res);
-// })
-
+app.use(session({
+    secret : 'sfdgvgfsdugvyu fdsgvdfhbvjk',
+    resave :false ,
+    saveUninitialized :true
+}))
+app.use(flash());
 
 app.get("/",(req,res)=>
 {
@@ -65,16 +39,13 @@ app.get("/user",(req,res)=>
     res.render("index")
 })
 
-app.get('/addFlash', function (req, res) {
-    req.flash('info', 'Flash Message Added');
-    res.redirect('/');
-  });
 app.get("/products",(req,res)=>
 {
+
     res.render("product")
 })
 
-app.listen("3000",()=>
+app.listen(3000,()=>
 {
     console.log("started at ", 3000 );
 })

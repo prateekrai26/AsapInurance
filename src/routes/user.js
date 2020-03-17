@@ -23,6 +23,7 @@ router.get("/signup",(req,res)=>
 })
 router.get("/login",(req,res)=>
 {
+  req.flash('info', 'Flash Message Added');
   res.render("login");
 })
 
@@ -105,34 +106,44 @@ router.post("/login",async (req,res)=>
 
   try{
   const user=await User.findByCredentials(req.body.email,req.body.password);
+    console.log(user)
     if(user.confirmed===false)
       {
-        req.flash("error", "That email has already been registered.");
-
-        return res.redirect("/login")
-         
+      
+        req.flash('error','Please Verify your Email')
+         res.redirect("/login")
       }
-      else {
+      else if(user) {
         const token=await user.generateToken();
-        res.cookie('auth-token',token)
+        console.log(token)
+        res.cookie('auth-key',token)
          res.redirect('/profile')
       }
   }
   catch(e)
   {
-    res.send(e)
+    console.log(e)
+     req.flash('error',(""+e).replace('Error:',''))
+     res.redirect("/login")
   }
-
 })
 
 router.post("/signup",async (req,res)=>
 {
+   try{
     const user= new User(req.body)
     const token=await user.generateToken();
     const url =  "http://localhost:3000/confirm/" +  token 
-    Emails.sendWelcomeEmail(user.email, url )
+    Emails.sendEmail(user.email, url )
        res.cookie('auth-key',token)  
        res.render("welcome")
+   }
+   catch(e)
+   {
+     console.log(e)
+    req.flash('error',"User Already Have a Account")
+    res.redirect("/signup")
+   }
 })
 
 module.exports= router

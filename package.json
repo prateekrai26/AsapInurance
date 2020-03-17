@@ -5,7 +5,7 @@
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
-    "dev": " nodemon src/app.js"
+    "dev": "nodemon src/app.js"
   },
   "author": "",
   "license": "ISC",
@@ -20,10 +20,11 @@
     "express-flash": "git://github.com/RGBboy/express-flash.git",
     "express-session": "^1.17.0",
     "flash": "^1.1.0",
+    "flash-express": "^1.0.4",
     "hbs": "^4.1.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.8.11",
-    "nodemailer": "^6.4.2",
+    "nodemailer": "^6.4.5",
     "nodemon": "^2.0.2",
     "session": "^0.1.0"
   }
