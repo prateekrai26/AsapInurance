@@ -111,8 +111,8 @@ router.post("/login",async (req,res)=>
 {
 
   try{
+    console.log(req.body)
   const user=await User.findByCredentials(req.body.email,req.body.password);
-    console.log(user)
     if(user.confirmed===false)
       {
       
@@ -121,7 +121,6 @@ router.post("/login",async (req,res)=>
       }
       else if(user) {
         const token=await user.generateToken();
-        console.log(token)
         res.cookie('auth-key',token)
          res.redirect('/profile')
       }

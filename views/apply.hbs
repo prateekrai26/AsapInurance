@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>ASAP Life Insurance</title>
-    <link rel="stylesheet" href="../public/css/signup.css" />
+    <link rel="stylesheet" href="../public/css/apply.css" />
   </head>
   <body>
     <div class="home">
@@ -14,8 +14,7 @@
           <div id="main_nav">
             <nav>
               <div id="logo1">
-                <img src="../public/img/logo.png" alt="" height="50px" />
-                <h3 class="logo">&nbspLife Insurance</h3>
+                <img src="../public/img/logoasap8.png" alt="" height="50px" />
               </div>
               <h4>Products</h4>
               <h4>About Us</h4>
@@ -29,37 +28,40 @@
             <h1>Apply for Insurance</h1>
             <br>
             <br />
-            <form class="login" action="/apply" method="POST">
+            <form  action="/apply" method="POST">
               Name: <br />
-              <input type="text" placeholder="" name="name" />
+              <input class="login" type="text" placeholder="" name="name" />
               <br />
-              BirthDay:<br />
-              <input type="date" placeholder="" name="bday" />
+               Email: <br>
+              <input class="login" type="text" placeholder="" name="email" />
+       
+             <br>
+              <div class="sel">
+                   <p  >Sex : <br>
+                <select name="sex" >
+                  <option  value="male">Male</option>
+                 <option  value="female">Female</option>
+                  <option  value="others">Others</option>
+               </select>
+               </p>
+             <p>  Birthday : <br> <input type="date" placeholder="" name="bday" /> </p>  
+         
               <br />
-              Sex:<br />
-              <input type="text" placeholder="" name="sex" />
-              <br />
+      
               Address:<br />
-              <input type="text" placeholder="" name="address" />
+              <input class="login" type="text" placeholder="" name="address" />
               <br />
               Phone no:<br />
-              <input type="text" placeholder="" name="phone" />
-              <br />
-              Email:<br />
-              <input type="text" placeholder="" name="email" />
+              <input class="login" type="text" placeholder="" name="phone" />
               <br />
               Aadhaar no:<br />
-              <input type="text" placeholder="" name="adhar" />
-              <br />
-               Insurance Type:<br />
-               <label for="Home">Home</label> 
-               <input type="radio" name="insurance_type" value="Home">
-                
-                   <input type="radio" name="insurance_type" value="Family">
-                <label for="family">Family</label> 
-                <input type="radio" name="insurance_type" value="Car">
-                <label for="Car">Car</label> 
-              <br />
+              <input class="login" type="text" placeholder="" name="adhar" />
+              <br /> 
+                     <div class="selector">
+                      <input  type="radio" name="insurance_type" value="Car" checked>Car
+                      <input   type="radio" name="insurance_type" value="House"> House
+                      <input type="radio" name="insurance_type" value="Health">Health
+                </div>
                 <span></span>
               <span></span>
               <span></span>

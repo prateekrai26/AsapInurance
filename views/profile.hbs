@@ -1,134 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Apply for Insurance</title>
-<link href="../public/css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
-<link href="../public/css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
-</head>
-<body style="padding-top: 70px">
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
-        <li class="nav-item"> <a class="nav-link" href="/logout">Logout</a> </li>
-        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a> </div>
-        </li>
-        <li class="nav-item"> <a class="nav-link" href="/apply">Apply Insurance</a> </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Nearby Agent" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-  
-</nav>
-
-<!-- Main Container -->
-<div class="container"> 
-  <!-- Header >
-  <header class="header">
-    <h4 class="logo">GRID</h4>
-  </header-->
-  <!-- Hero Section -->
-  <section class="intro">
-    <div class="column">
-      <h3>{{name}}</h3>
-      <img src="../public/img/profile.png" alt="" class="profile"> </div>
-    <div class="column">
-      <h5>Age:   {{age}}</h5>
-      <h5>Phone :   {{phone}}</h5>
-      <h5>Email:   {{email}}</h5>
-      
-    </div>
-  </section>
-  <!-- Stats Gallery Section -->
-	<hr>
-	<h2>Active Plans</h2>
-	<hr>
-
-  {{#each products}}
-    <div class="gallery">
-    <div class="thumbnail"> <a href="#"><img src="../public/img/bkg_06.jpg" alt="" width="2000" class="cards"/></a>
-      <h4>{{insurance_type}}</h4>
-      <p class="tag">{{name}}</p>
-      <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-  </div>
-   {{/each }}
-  </div>
-  <!-- Footer Section -->
-  <footer id="contact">
-    <p class="hero_header">GET IN TOUCH WITH ME</p>
-    <div class="button">EMAIL ME </div>
-  </footer>
- 
-<!-- Main Container Ends -->
-<script src="../public/js/jquery-3.3.1.min.js"></script>
-<script src="../public/js/popper.min.js"></script>
-<script src="../public/js/bootstrap-4.3.1.js"></script>
+     <head>
+        <link rel="stylesheet" href="../public/res/grid.css">
+        <link rel="stylesheet" href="../public/res/profile.css">
+        <link rel="stylesheet" href="../public/res/normalize.css">
+     </head>
+      <body>
+        <header></header>
+        <header>cewyucgyu</header>
+      </body>
 
 
-
- <!--FOOTER-->
- <div class="container-fluid text-white bg-dark p-4">
-  <div class="row">
-    <div class="col-6 col-md-8 col-lg-7">
-      <div class="row text">
-        <div class="col-sm-6 col-md-4 col-lg-4 col-12">
-          <ul class="list-unstyled">
-            <li class="align-start">ABOUT  </li><br>
-            <li class="btn-link"> <a >About Us</a></li>
-            <li class="btn-link"><a >Contact Us</a> </li>
-      <li class="btn-link"> <a >Careers</a> </li>
-            <!--li class="btn-link"> <a></a> </li-->
-          </ul>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 col-12">
-          <ul class="list-unstyled">
-            <li ><b> <a>SOCIAL</a></b></li><br>
-            <li class="btn-link"><a >Facebook</a></li>
-            <li class="btn-link"> <a >Youtube</a></li>
-            
-          </ul>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 col-12">
-          <ul class="list-unstyled">
-      <li><b> <a>Help</a></b> </li><br>
-            <li class="btn-link"> <a>Claim Policy</a> </li>
-            <!--li class="btn-link"> <a>....</a> </li-->
-            <li class="btn-link"> <a href="../FAQ.php">FAQ</a> </li>
-            <!--li class="btn-link"> <a>Link anchor</a> </li-->
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 col-lg-5 col-6">
-      <address>
-        <strong>ASAP Insurance Ltd.</strong><br>
-        BIT MESRA, Ranchi<br>
-        Jharkhand, India<br>
-    
-       
-      </address>
-      
-    </div>
-  
-  </div>
-</div>
-
-<!--FOOTEREND-->
- <!-- Copyrights Section -->
- <div class="copyright">&copy;2020 - <strong>SE-Project</strong></div>
-</div>
-
-</body>
 </html>

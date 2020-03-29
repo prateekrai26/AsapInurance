@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+.product{
+    background: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));
+}
+
+button {
+  background-color: rgba(11, 16, 35, 1);
+  border: 5px;
+  color: white;
+  padding: 20px 100px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.premium{
+  margin-left: 27px;
+}
+
+#main_nav{
+    background-color: rgb(21, 19, 34);
+    margin: 0px -67px;
+    padding: 0px 100px;
+    color: white;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+
+  #logo1{
+    display: flex;
+  }
+
+  nav {
+    min-height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+  }
+
+.banner
+{
+    position: relative;
+    width: 130%;
+    height: 100vh;
+    background: url(/SE_Lab-master/img/banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo {
+    font-size: 30px;
+  }
+
+section:nth-child(2n+1)
+{
+    position: relative;
+    height: auto;
+    
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+section:nth-child(2n+2)
+{
+    position: relative;
+    height: auto;
+        display: flex;
+    
+}
+
+
+section .imgbox
+{
+    position: sticky;
+    top: 0;
+    min-width: 60%;
+    height: 100vh;
+
+}
+
+
+section .imgbox img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 600px;
+}
+
+section:nth-child(2n+1) .content
+{
+    padding: 100px 0 100px 100px;
+    text-align: left;
+}
+
+
+section:nth-child(2n+2) .content
+{
+    padding: 100px 100px 100px 0;
+    text-align: left;
+}
+
+section .content h1
+{
+    margin: 0 0 20px;
+    font-size: 35px;
+    color:rgb(52, 145, 221);
+}
+
+section .content p
+{
+    color:white;
+    font-size: 18px;
+
+}
+li{
+    font-size: 20px;
+    color:white;
+    
+}

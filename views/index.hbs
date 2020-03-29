@@ -5,90 +5,261 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>ASAP Insurance Ltd.</title>
-    <link rel="stylesheet" href="../public/css/landing.css" />
- 
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css" />
+
+    <link rel="icon" href="#" />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/3.3/examples/carousel/"
+    />
+
+    <link href="../public/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../public/css/carousel.css" rel="stylesheet" />
   </head>
   <body>
     <div class="home">
       <div class="home1">
         <header>
           <div id="main_nav">
-          <nav>
-            <div id="logo1">
-              <img src="../public/img/logo.png" alt="" height="50px">
-              <h3 class="logo">&nbspInsurance Ltd.</h3>
-            </div>
-            <a href="/products"><h4>Products</h4></a>
-            <h4>About Us</h4>
-            <a href="/login"><h4>Login</h4></a>
-            <img src="../public/img/icons8-menu.svg" alt="burger" />
-          </nav>
-        </div>
-        <br>
+            <nav>
+              <a href="../index.html">
+                <div id="logo1">
+                  <img src="../public/img/logoasap8.png" alt="" height="70px" />
+                  <h3 class="logo"></h3></div
+              ></a>
+              <a href="/products"><h4>Products</h4></a>
+              <h4>About Us</h4>
+              <a href="/login"><h4>Login</h4></a>
+              <img src="../public/img/icons8-menu.svg" alt="burger" />
+            </nav>
+          </div>
           <main>
             <section class="landing">
               <div class="options">
                 <div>
-                  <img class="photo1" src="../public/img/photo1.jpg" alt="" />
+                  <img class="photo1" src="../public/img/photo1.png" alt="" />
                 </div>
                 <h1>I want insurance for</h1>
+                <br />
                 <nav id="choice1">
-                  <a href="#"><img src="../public/img/health.svg" alt="" height="100px" width="100px"></a>
-                  <a href="#"><img src="../public/img/car.svg" alt="" height="100px" width="100px"></a>
-                  <a href="#"><img src="../public/img/travel.svg" alt="" height="100px" width="100px"></a>
+                  <a href="pages/products.html#health"
+                    ><img
+                      src="../public/img/health.svg"
+                      alt=""
+                      height="100px"
+                      width="100px"
+                  /></a>
+                  <a href="pages/products.html#vehicle"
+                    ><img
+                      src="../public/img/car.svg"
+                      alt=""
+                      height="100px"
+                      width="100px"
+                  /></a>
+                  <a href="pages/products.html#travel"
+                    ><img
+                      src="../public/img/travel.svg"
+                      alt=""
+                      height="100px"
+                      width="100px"
+                  /></a>
                 </nav>
                 <nav id="choice">
-                <p>Health</p>
-                <p>Vehicle</p>
-                <p>Travel</p>
+                  <p>Health</p>
+                  <p>Vehicle</p>
+                  <p>Travel</p>
                 </nav>
                 <br /><br /><br />
               </div>
             </section>
-            <section class="whyus">
-              <div class="options">
-                <h1>Why choose ASAP Insurance?</h1>
-                <div>
-                  <img class="photo2" src="../public/img/photo2.jpg" alt="" />
+            <h1>Why Choose ASAP Insurace?</h1>
+            <br />
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#myCarousel"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img
+                    class="first-slide"
+                    src="../public/img/trophies.jpg"
+                    alt="First slide"
+                  />
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <h1>
+                        No.1 Rated Insurance Company for 5 Years in a Row.
+                      </h1>
+                      <p>
+                        <a class="btn btn-lg btn-primary" href="#" role="button"
+                          >Apply Now</a
+                        >
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <p class="whyuspara">
-                  ASAP Health Plans: Leading a healthy lifestyle in the modern
-                  high-stress routines is challenging. Medical emergencies can
-                  arise without any intimation. At such times, treatment costs
-                  can put a huge financial burden on families. For example, cost
-                  of cancer treatment can cost around 20 lacs*. Such huge
-                  payments coupled with work-pay loss can cause imbalances in
-                  your family finances. ASAP Life Health Plans help you to be
-                  financially prepared for such situations by providing you
-                  coverage for your medical recovery.
-                </p>
-              </div>
-            </section>
-            <section class="customers">
-              <div class="options">
-                <h1>What Customers are saying?</h1>
-                <div>
-                  <img class="photo3" src="../public/img/photo3.jpg" alt="" />
+                <div class="item">
+                  <img
+                    class="second-slide"
+                    src="../public/img/coverage.jpg"
+                    alt="Second slide"
+                  />
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <h1>
+                        Highest Extent of Coverage and Scope of Beneficiaries.
+                      </h1>
+                      <p>
+                        <a class="btn btn-lg btn-primary" href="/apply" role="button"
+                          >Apply Now</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <img
+                    class="third-slide"
+                    src="../public/img/handshake.jpg"
+                    alt="Third slide"
+                  />
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <h1>Easy Claim Settlement Policy</h1>
+                      <p>
+                        <a class="btn btn-lg btn-primary" href="#" role="button"
+                          >Apply Now</a
+                        >
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </section>
-            <div class="pages">
-              <div class="page-1">
-                <h3>Home</h3>
-                <img src="../public/img/dot filled.svg" alt="" />
-              </div>
-              <div class="page-2">
-                <h3>Why choose ASAP Insurance?</h3>
-                <img src="../public/img/dot empty.svg" alt="" />
-              </div>
-              <div class="page-3">
-                <h3>What Customers are saying?</h3>
-                <img src="../public/img/dot empty.svg" alt="" />
-              </div>
+              <a
+                class="left carousel-control"
+                href="#myCarousel"
+                role="button"
+                data-slide="prev"
+              >
+                <span class="sr-only"><</span>
+              </a>
+              <a
+                class="right carousel-control"
+                href="#myCarousel"
+                role="button"
+                data-slide="next"
+              >
+                <span class="sr-only">></span>
+              </a>
             </div>
-          </main>
-        </header>
-      </div>
-    </div>
+            <!-- /.carousel -->
+
+            <!-- Marketing messaging and featurettes
+                ================================================== -->
+            <!-- Wrap the rest of the page in another container to center all the content. -->
+            <h1>What our Customers are saying?</h1>
+
+            <div class="container marketing">
+              <!-- Three columns of text below the carousel -->
+              <div class="row">
+                <div class="col-lg-4">
+                  <img
+                    class="img-circle"
+                    src="../public/img/johnny.jpg"
+                    alt="Generic placeholder image"
+                    width="140"
+                    height="140"
+                  />
+                  <h2>Johnny</h2>
+                  <p>
+                    Donec sed odio dui. Etiam porta sem malesuada magna mollis
+                    euismod. Nullam id dolor id nibh ultricies vehicula ut id
+                    elit. Morbi leo risus, porta ac consectetur ac, vestibulum
+                    at eros. Praesent commodo cursus magna.
+                  </p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                  <img
+                    class="img-circle"
+                    src="../public/img/sasha.jpeg"
+                    alt="Generic placeholder image"
+                    width="140"
+                    height="140"
+                  />
+                  <h2>Sasha</h2>
+                  <p>
+                    Duis mollis, est non commodo luctus, nisi erat porttitor
+                    ligula, eget lacinia odio sem nec elit. Cras mattis
+                    consectetur purus sit amet fermentum. Fusce dapibus, tellus
+                    ac cursus commodo, tortor mauris condimentum nibh.
+                  </p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                  <img
+                    class="img-circle"
+                    src="../public/img/leah.jpg"
+                    alt="Generic placeholder image"
+                    width="140"
+                    height="140"
+                  />
+                  <h2>Leah</h2>
+                  <p>
+                    Donec sed odio dui. Cras justo odio, dapibus ac facilisis
+                    in, egestas eget quam. Vestibulum id ligula porta felis
+                    euismod semper. Fusce dapibus, tellus ac cursus commodo,
+                    tortor mauris condimentum nibh, ut fermentum massa justo sit
+                    amet risus.
+                  </p>
+                </div>
+                <!-- /.col-lg-4 -->
+              </div>
+              <!-- /.row -->
+
+              <!-- START THE FEATURETTES -->
+
+              <hr class="featurette-divider" />
+<br>
+              <h1>News and Notices</h1>
+<br>
+              
+
+              <!-- FOOTER -->
+              <footer>
+                <p class="pull-right"><a href="#">Back to top</a></p>
+                <p>
+                  &copy; 2016 Company, Inc. &middot;
+                  <a href="#">Privacy</a> &middot;
+                  <a href="#">Terms</a>
+                </p>
+              </footer>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="../public/js/bootstrap.min.js"></script>
+           
+    <script src="../public/js/bootstrap.min.js"></script>
   </body>
 </html>
+
+<!--
+<div class="pages">
+  <div class="page-1">
+    <img src="/SE_Lab-master/img/dot filled.svg" alt="" />
+  </div>
+  <div class="page-2">
+    <img src="/SE_Lab-master/img/dot empty.svg" alt="" />
+  </div>
+  <div class="page-3">
+    <img src="/SE_Lab-master/img/dot empty.svg" alt="" />
+  </div>
+</div>
+-->
