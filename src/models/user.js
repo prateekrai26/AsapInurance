@@ -25,6 +25,10 @@ const userSchema = new mongoose.Schema({
         trim:true,
         minlengtth: 7
       },
+     type:{
+       type:String ,
+       required:true,
+     },
       tokens:[
          {
              token:{

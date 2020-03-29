@@ -58,7 +58,7 @@ let prod=undefined;
     
 })
 
-router.get("/apply", async (req,res)=>
+router.get("/apply",auth, async (req,res)=>
 {
   res.render("apply")
 })

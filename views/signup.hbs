@@ -26,18 +26,18 @@
         </div>
         <br>
           <main><br><br><br>
-            
-           
-<form class="selector">
-  <input type="radio" name="gender" value="Customer" checked> Customer
-  <input type="radio" name="gender" value="Agent"> Agent
-  <input type="radio" name="gender" value="Admin"> Admin  
-</form> 
-    
             <br>
-            <form class="login" method="POST" action="/signup">
+           
+            <form  method="POST" action="/signup">
+                      <div class="selector">
+                      <input  type="radio" name="type" value="Customer" checked>Customer
+                      <input   type="radio" name="type" value="Agent"> Agent
+                      <input type="radio" name="type" value="Admin">Admin
+                </div>
+
+              <div class="log">
               Name:<br>
-              <input type="text" name="name"><br>
+              <input  type="text" name="name"><br>
               Email:<br>
               <input type="email" name="email"> <br> <br> 
                 Password:<br>
@@ -47,7 +47,7 @@
               <div>
                  <h4>{{messages.error}}</h4>
                  </div>    <br>
-
+               </div>
            <button>Signup</button> 
             </form>
             <br>
