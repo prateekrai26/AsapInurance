@@ -7,8 +7,6 @@ router.use(cookieParser())
 const products = require("../models/product")
 const Emails = require("../middlewares/email")
 const jwt = require("jsonwebtoken")
-const multer= require("multer")
-const upload= multer({dest:'../uploads'})
 var flash = require('express-flash')
 var session = require('express-session')
   router.use(session({
