@@ -28,7 +28,7 @@
             <h1>Apply for Insurance</h1>
             <br>
             <br />
-            <form  action="/apply" method="POST">
+            <form  action="/apply" method="POST" class="inp">
               Name: <br />
               <input class="login" type="text" placeholder="" name="name" />
               <br />
@@ -57,11 +57,35 @@
               Aadhaar no:<br />
               <input class="login" type="text" placeholder="" name="adhar" />
               <br /> 
+                      <br>
+                      Select Insurance Type :
                      <div class="selector">
                       <input  type="radio" name="insurance_type" value="Car" checked>Car
                       <input   type="radio" name="insurance_type" value="House"> House
                       <input type="radio" name="insurance_type" value="Health">Health
                 </div>
+                <br>
+                Select Plan :
+               <div>
+                 <select name="plan" class="plan" >
+                   <option value="5">5 year plan</option>
+                   <option value="10">10 year plan</option>
+                   <option value="15">15 year plan</option>
+                   <option value="20">20 year plan</option>
+                 </select>
+               </div>
+               <br>
+                  Select Premium :
+               <div>
+                 <select name="premium" class="plan" >
+                   <option value="5">5 Laks</option>
+                   <option value="10">10 Lakhs</option>
+                   <option value="15">15 Lakhs</option>
+                   <option value="20">20 Lakhs</option>
+                 </select>
+               </div>
+
+
                 <span></span>
               <span></span>
               <span></span>

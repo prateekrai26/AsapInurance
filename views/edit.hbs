@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ASAP Life Insurance</title>
+    <link rel="stylesheet" href="../public/css/signup_style.css" />
+  </head>
+  <body>
+    <div class="home">
+      <div class="home1">
+        <header>
+          <div id="main_nav">
+          <nav>
+            <div id="logo1">
+              <img src="../public/img/logoasap8.png" alt="" height="50px">
+       
+              </div>
+            <h4>Products</h4>
+            <h4>About Us</h4>
+            <h4>Login/Signup</h4>
+            <img src="../public/img/icons8-menu.svg" alt="burger" />
+          </nav>
+          
+        </div>
+        <br>
+          <main><br><br><br>
+            <br>
+           
+            <form  method="POST" action="/edit">
+              <div class="log">
+              Name:<br>
+              <input  type="text" name="name"><br> 
+                Password:<br>
+              <input type="password" name="password"> <br> <br>  
+                Phone:<br>
+              <input type="Phone" name="phone"> <br> <br> 
+              <div>
+                 <h4>{{messages.error}}</h4>
+                 </div>    <br>
+               </div>
+           <button>Signup</button> 
+            </form>
+            <br>
+            <br>
+          </main>
+      </header>
+      </div>
+    </div>
+  </body>
+</html>

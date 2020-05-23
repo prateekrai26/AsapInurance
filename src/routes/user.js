@@ -7,7 +7,8 @@ router.use(cookieParser())
 const products = require("../models/product")
 const Emails = require("../middlewares/email")
 const jwt = require("jsonwebtoken")
-
+const multer= require("multer")
+const upload= multer({dest:'../uploads'})
 var flash = require('express-flash')
 var session = require('express-session')
   router.use(session({
@@ -26,7 +27,10 @@ router.get("/login",(req,res)=>
   req.flash('info', 'Flash Message Added');
   res.render("login");
 })
-
+router.get("/products", (req,res)=>
+{
+  res.render("product")
+})
 router.get("/profile", auth , async (req,res)=>
 {
 
@@ -72,8 +76,19 @@ router.post("/apply",auth,  async (req,res)=>
         owner:req.user._id
     }
 );
+  console.log(req.body)
+const today = new Date();
+const dt = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+    Product.date=dt;
    Product.save()
+ 
     res.redirect("/profile")
+})
+
+router.post("/upload" ,upload.single('avatar') , (req,res , next)=>
+{
+  res.redirect('/profile')
+  console.log(req.file)
 })
 
 
@@ -151,4 +166,9 @@ router.post("/signup",async (req,res)=>
    }
 })
 
+
+router.get('/edit', async (req, res)=>
+{
+  res.render("edit");
+})
 module.exports= router

@@ -1,7 +1,7 @@
 const mongoose  = require ('mongoose')
 const productSchema = new mongoose.Schema(
     {
-        name:{
+         name:{
             type:String,
             required:true,
             trim:true
@@ -50,15 +50,29 @@ const productSchema = new mongoose.Schema(
         },
         insurance_type :
         {
-            type:String,
-            required:true,
-            trim:true
+           
+        },
+        date:
+        {
+           
         },
         owner:
         {
             type:mongoose.Schema.Types.ObjectId,
             required:true,
             ref:"User"
+        },
+        plan:
+        {
+             type:Number,
+            required:true,
+            trim:true
+        } ,
+        premium:
+        {
+            type:Number,
+            required:true,
+            trim:true
         }
     },
     {

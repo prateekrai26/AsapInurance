@@ -1,14 +1,61 @@
 <!DOCTYPE html>
 <html>
-     <head>
-        <link rel="stylesheet" href="../public/res/grid.css">
-        <link rel="stylesheet" href="../public/res/profile.css">
-        <link rel="stylesheet" href="../public/res/normalize.css">
-     </head>
-      <body>
-        <header></header>
-        <header>cewyucgyu</header>
-      </body>
+<head>
+	<title>
+		App
+	</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/profile.css">
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
 
+</head>
+<body>
+      <div class="header">
+       	<div class="main">
+       		 <a class="logo" href="/"><img src="../public/img/logoasap8.png"></a>
+       	</div> 
+      <div class="nav-items">
+      	<ul class="log">
+      		<li>
+      			<a class="head-link" href="/products">Products</a>
+      		</li>
+      		<li>
+      			<a class="head-link"  href="/apply">Apply Insurance</a>
+      		</li>
+      		<li>
+      			<a class="head-link" href="#">Agents</a>
+      		</li>
+      	</ul>
+      </div>
+     </div>
+    <div class="data">
+      <div class="img">
+         <img src="../public/img/profile.png  ">
+      </div>
+      <div class="bio">
+      	   <h3>{{name}}</h3>
+           <h5><a class="head-link" href="/edit">Edit Profile</a></h5>
+      </div>
+        
+    </div>
+      <div class="plan">
+      	<h2 class="head">My Plans</h2>
+     </div>
+       <hr>
+     <div class="plans">
 
+         {{#each products}}
+     	  <div class="plans-item">
+			<p>Name : {{name}}</p>
+			<p>Phone : {{phone}}</p>
+			<p>Adhar No : {{adhar}}</p>
+     	  	<p>Insurance Type : {{insurance_type}}</p>
+			<p>Issue Date : {{date}}</p>
+			<p>Plan : {{plan}} Year Plan</p>
+			<p>Premium Amount : {{plan}} Lakhs</p>
+     	  </div>
+         {{/each }}
+     	  
+ 
+     </div>
+</body>
 </html>

@@ -17,7 +17,8 @@ var session = require('express-session')
 var flash = require('express-flash')
 const cookieParser= require("cookie-parser")
 app.use(cookieParser())
-
+const multer= require("multer")
+const upload= multer({dest:'/uploads'})
 app.use(express.static(publicDirectoryPath))
 app.use(session({
     secret : 'sfdgvgfsdugvyu fdsgvdfhbvjk',
