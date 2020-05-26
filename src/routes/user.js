@@ -83,12 +83,6 @@ const dt = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
     res.redirect("/profile")
 })
 
-router.post("/upload" ,upload.single('avatar') , (req,res , next)=>
-{
-  res.redirect('/profile')
-  console.log(req.file)
-})
-
 
 router.get("/logout", async  (req,res)=>{
   res.cookie('auth-key',undefined)
