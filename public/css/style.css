@@ -11,6 +11,10 @@
   float: left;
 }
 
+
+html{
+  background: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));
+}
 .clearfix:after
 {
     content: "";
@@ -113,4 +117,20 @@ a {
 .pages img {
   width: 10px;
   height: 10px;
+}
+
+.bt
+{
+  background:radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));;	
+  color: white;
+  border-radius: 5px;
+  padding: 15px 15px;
+
+}
+.bt:hover{
+  color: white;
+}
+.bt:active
+{
+  color: white;
 }

@@ -47,6 +47,11 @@ const userSchema = new mongoose.Schema({
       {
         type:Boolean,
         default:false
+      },
+      cid:{
+        type:String,
+        required:true,
+        trim:true
       }
 },
 {

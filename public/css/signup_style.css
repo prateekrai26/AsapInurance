@@ -34,6 +34,7 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border-radius: 5px;
 }
 .home {
   color: white;
@@ -122,7 +123,12 @@ a:hover span:nth-child(1)
 }
 
 
-
+.bt
+{
+  background:radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));;	
+  color: white;
+  border-radius: 5px;
+}
 a span:nth-child(3)
 {
   bottom: 0;

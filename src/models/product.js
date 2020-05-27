@@ -54,7 +54,9 @@ const productSchema = new mongoose.Schema(
         },
         date:
         {
-           
+            type:String,
+            required:true,
+            trim:true
         },
         owner:
         {
@@ -67,13 +69,29 @@ const productSchema = new mongoose.Schema(
              type:Number,
             required:true,
             trim:true
-        } ,
+        },
         premium:
         {
             type:Number,
             required:true,
             trim:true
+        } ,
+        product_id:
+        {
+            type:String,
+            required:true,
+            trim:true
+        },
+        agent_id :{
+            type:String,
+            required:true,
+            trim:true
+        },
+        confirmed:{
+            type:Boolean,
+            default:false
         }
+    
     },
     {
         timestamps:true

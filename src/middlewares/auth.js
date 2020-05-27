@@ -23,7 +23,7 @@ const auth = async (req,res,next)=>
    }
    catch(e)
    {
-    res.send({"error":"Please Authenticate"})
+    res.redirect("/login")
    }
 
 }

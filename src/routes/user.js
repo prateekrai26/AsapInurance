@@ -43,21 +43,55 @@ router.get("/profile", auth , async (req,res)=>
 
 //         console.log(req.user.tasks)
 let prod=undefined;
-  const product= products.find({owner : req.user._id},(err,resu)=>
+if(req.user.type ==='Customer')
+{
+  const product= products.find({owner : req.user._id ,confirmed:true},(err,resu)=>
+  {
+    
+    
+      const data = {
+        name  : req.user.name ,
+        age :req.user.age  ,
+        phone : req.user.phone ,
+        email : req.user.email,
+        cid : req.user.cid, 
+        products:resu
+      }
+       res.render('profile',data)
+  })
+  
+}
+else 
+{
+  const cust= products.find({agent_id : req.user.cid} , (err , ress)=>
   {
     const data = {
       name  : req.user.name ,
       age :req.user.age  ,
       phone : req.user.phone ,
       email : req.user.email,
-      products:resu
+      cid : req.user.cid, 
+      customers:ress
     }
-
-    res.render('profile',data)
-
+     res.render('agents_pro',data)
   })
-  
-    
+
+}
+
+
+})
+
+router.get("/confirm-user/:id", auth , async (req, res)=>
+{
+   const id= req.params.id;
+   console.log(id)
+  const user= products.findOne({_id:id} , (err , ress)=>
+  {
+    ress.confirmed= true
+    ress.save()
+  })
+
+   res.redirect("/profile");
 })
 
 router.get("/apply",auth, async (req,res)=>
@@ -68,6 +102,11 @@ router.get("/apply",auth, async (req,res)=>
 router.post("/apply",auth,  async (req,res)=>
 {
 
+    
+  let tp= Math.floor(100000 + Math.random() * 900000);
+  let id="";
+       id= 'PD' + tp;
+    req.body.product_id= id;
   const Product=await new products(
     {
         ...req.body,
@@ -113,6 +152,22 @@ router.get("/confirm/:id", async (req,res)=>
     }
 })
 
+router.get("/delete-product/:id",auth , async (req,res)=>
+{
+        if(req.user.type != "Agent")
+          res.redirect("/profile")
+   const id= req.params.id;
+   const cust= await products.findOneAndRemove({_id:id})
+   res.redirect("/profile")
+})
+
+router.get("/edit-plan/:id" , auth , async(req, res)=>
+{
+  if(req.user.type != "Agent")
+    res.redirect("/profile")
+    const id= req.params.id;
+    
+})
 
 router.post("/login",async (req,res)=>
 {
@@ -143,6 +198,14 @@ router.post("/login",async (req,res)=>
 router.post("/signup",async (req,res)=>
 {
    try{
+    
+    let tp= Math.floor(100000 + Math.random() * 900000);
+   let id="";
+    if(req.body.type==='Agent')
+      id= 'AG' + tp;
+    else 
+     id= 'CU' + tp;
+     req.body.cid= id;
     const user= new User(req.body)
     const token=await user.generateToken();
     const url =  process.env.URL +  token 
@@ -158,7 +221,22 @@ router.post("/signup",async (req,res)=>
    }
 })
 
+router.get("/logout",async (req,res)=>
+{
+  res.cookie('auth-key','')
+    rews.redirect('/')
+})
 
+router.get("/agents",async (req, res)=>
+{
+     const ag= "Agent";
+     const agents= User.find({type :ag} , (err, ress)=>{
+
+       res.render("agents",{agents:ress})
+     });
+
+    
+})
 router.get('/edit', async (req, res)=>
 {
   res.render("edit");
