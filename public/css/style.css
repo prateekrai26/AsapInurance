@@ -5,26 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.profile-image img{
-  height: 300px;
-  width: 300px;
-  float: left;
-}
 
-
-html{
-  background: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));
-}
-.clearfix:after
-{
-    content: "";
-    display: table;
-    clear: both
-}
-.data h3{
-   font-size:medium;
-   margin-top: 10px;
-}
 @font-face {
   font-family: PopLight;
   src: url(../fonts/Poppins-Light.ttf);
@@ -36,6 +17,42 @@ html{
 @font-face {
   font-family: PopBold;
   src: url(../fonts/Poppins-Bold.ttf);
+}
+
+.profile-image img {
+  height: 300px;
+  width: 300px;
+  float: left;
+}
+
+
+
+body {
+  overflow-x: hidden;
+  font-family: PopLight !important;
+}
+
+a {
+  text-decoration: none;
+  color: white !important;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white !important;
+}
+
+body {
+  background: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.data h3 {
+  font-size: medium;
+  margin-top: 10px;
 }
 
 body {
@@ -65,6 +82,7 @@ body {
   background-color: rgba(65, 76, 117, 0.7);
   margin: 0px -67px;
   padding: 0px 67px;
+  font-family: PopLight;
 }
 
 #logo1 {
@@ -78,6 +96,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0px;
+}
+
+.carousel-caption {
+  border-radius: 40px;
+  background-color: rgba(11, 16, 35, 0.4);
 }
 
 .logo {
@@ -119,18 +142,121 @@ a {
   height: 10px;
 }
 
-.bt
-{
-  background:radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));;	
+.bt {
   color: white;
   border-radius: 5px;
   padding: 15px 15px;
+}
+.bt:hover {
+  color: white;
+}
+.bt:active {
+  color: white;
+}
 
+.footer {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  font-size: 16px;
 }
-.bt:hover{
-  color: white;
+
+.footer div {
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
-.bt:active
-{
-  color: white;
+
+.pcontainer {
+  position: relative;
+  width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 10px auto 50px auto;
+}
+
+.pcontainer .pcard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));
+}
+.pcontainer .pcard:nth-child(even) {
+  flex-direction: column-reverse;
+}
+.pcontainer .pcard .imgbx {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: #000000;
+}
+
+.pcontainer .pcard .imgbx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pcontainer .pcard .pcontent {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pcontainer .pcard .pcontent div {
+  padding: 20px;
+  text-align: center;
+}
+.pcontainer .pcard .pcontent div button {
+  padding: 4px 10px;
+  background-color: #2e6da4;
+  border: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+  .pcontainer {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    margin: 50px;
+  }
+  .pcontainer .pcard {
+    flex-direction: row;
+    margin: 10px 0;
+  }
+  .pcontainer .pcard:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .pcontainer .pcard .imgbx,
+  .pcontainer .pcard .pcontent {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .pcontainer .pcard {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  .pcontainer .pcard:nth-child(even) {
+    flex-direction: column;
+  }
+  .pcontainer .pcard .imgbx,
+  .pcontainer .pcard .pcontent {
+    width: 100%;
+  }
+  .pcontainer .pcard .pcontent {
+    height: 100%;
+  }
+}
+
+.pull-right {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 10px;
 }

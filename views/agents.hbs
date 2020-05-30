@@ -1,48 +1,99 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>
 		App
 	</title>
 	<link rel="stylesheet" type="text/css" href="../public/css/profile.css">
-<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../public/css/bootstrap.min.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-      <div class="header">
-       	<div class="main">
-       		 <a class="logo" href="/"><img src="../public/img/logoasap8.png"></a>
-       	</div> 
-      <div class="nav-items">
-      	<ul class="log">
-      		<li>
-      			<a class="head-link" href="/products">Products</a>
-      		</li>
-      		<li>
-      			<a class="head-link"  href="/apply">Apply Insurance</a>
-      		</li>
-		
-      	</ul>
-      </div>
-     </div>
-     </div>
+	<div class="header">
+		<div id="main_nav">
+			<nav>
+				<div id="logo1">
+					<img src="../public/img/logoasap8.png" alt="" height="50px">
 
-	 <div class="plan">
-      	<h2 class="head">Available Agents</h2>
-     </div>
-       <hr>
-     <div class="plans">
+				</div>
+				<h4><a class="bt" href="/products">Products</a></h4>
+				<h4><a class="bt" href="../views/Premium Calculator/protection01.html">Premium Calculator</a></h4>
+				<h4><a class="bt" href="/agents">Agents</a></h4>
+				<h4><a class="bt" href="/claim">Policy Claim</a></h4>
+				<h4><a class="bt" href="/help">Help</a></h4>
+				<h4><a class="bt" href="/login">Login</a></h4>
+			</nav>
 
-         {{#each agents}}
-     	  <div class="plans-item">
-			<p>Name : {{name}}</p>
-			<p>Phone : {{phone}}</p>
-	 	     <p>Email : {{email}}</p>
-			<p>CID . No:  {{cid}}</p>
-     	  </div>
-         {{/each }}
-     	  
- 
-     </div>
+		</div>
+	</div>
+	</div>
+
+	<div class="plan">
+		<h2 class="head">Find Agents in Your Area</h2>
+	</div>
+	<label for="agents">Select your Location</label>
+	<br>
+
+	<select name="agents" id="agents">
+		<option value="volvo">Delhi</option>
+		<option value="saab">Mumbai</option>
+		<option value="mercedes">Kolkata</option>
+		<option value="audi">Ranchi</option>
+	</select>
+	<div class="container marketing">
+		<!-- Three columns of text below the carousel -->
+		<div class="row">
+			<div class="col-lg-4">
+				<img class="img-circle" src="../public/img/people (2).jpg" alt="Generic placeholder image" width="140"
+					height="140" />
+				<h2>Kunal</h2>
+				<p>
+					Phone No: +91 83681 42183
+					Email: kunal22@asap.co.in
+					ID No: ASAP-665
+				</p>
+			</div>
+			<!-- /.col-lg-4 -->
+			<div class="col-lg-4">
+				<img class="img-circle" src="../public/img/people (1).jpg" alt="Generic placeholder image" width="140"
+					height="140" />
+				<h2>Sheetal</h2>
+				<p>
+					Phone No: +91 75481 42145
+					Email: sheetal22@asap.co.in
+					ID No: ASAP-512
+				</p>
+			</div>
+			<!-- /.col-lg-4 -->
+			<div class="col-lg-4">
+				<img class="img-circle" src="../public/img/people (3).jpg" alt="Generic placeholder image" width="140"
+					height="140" />
+				<h2>Priyank</h2>
+				<p>
+					Phone No: +91 92281 421866
+					Email: priyank33@asap.co.in
+					ID No: ASAP-134
+					<br><br><br><br><br>
+				</p>
+			</div>
+			<!-- /.col-lg-4 -->
+		</div>
+		<div class="plans">
+
+			{{#each agents}}
+			<div class="plans-item">
+				<p>Name : {{name}}</p>
+				<p>Phone : {{phone}}</p>
+				<p>Email : {{email}}</p>
+				<p>CID . No: {{cid}}</p>
+			</div>
+			{{/each }}
+
+
+		</div>
 </body>
+
 </html>

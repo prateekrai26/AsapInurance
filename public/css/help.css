@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: PopLight;
+  src: url(../fonts/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: PopRegular;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: PopBold;
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+
+body {
+  font-family: PopLight !important;
+  text-align: center;
+}
+
+.home {
+  color: white;
+  background: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));
+}
+
+.home1 {
+  width: 90%;
+  margin: auto;
+}
+
+.help {
+  background-color: black;
+}
+
+#main_nav {
+  background-color: rgba(65, 76, 117, 0.7);
+  margin: 0px -67px;
+  padding: 0px 67px;
+}
+
+#logo1 {
+  display: flex;
+}
+
+nav {
+  min-height: 10vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.page {
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: 5% 1fr 1fr 1fr 5%;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h2 {
+  float: left;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.column {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.column1 {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding-left: 50px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+u {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+li {
+  text-align: left;
+}
+p {
+  font-size: 16px;
+  text-align: left;
+}
