@@ -1,110 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>ASAP Life Insurance</title>
-    <link rel="stylesheet" href="../public/css/apply.css" />
-  </head>
-  <body>
-       <div class="home">
-      <div class="home1">
-        <header>
-          <div id="main_nav">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>ASAP Life Insurance</title>
+  <link rel="stylesheet" href="../public/css/apply.css" />
+  <link rel="icon" href="../public/img/logoasap2.png">
+</head>
+
+<body>
+  <div class="home">
+    <div class="home1">
+      <header>
+        <div id="main_nav">
           <nav>
             <div id="logo1">
-               <a class="logo-link" href="/"><img src="../public/img/logoasap8.png" alt="" height="50px"></a> 
-       
-              </div>
-               
-                 <h4><a class="bt" href="/products">Products</a></h4>
-                <h4><a class="bt" href="/agents">Agents</a></h4>
-                <h4><a class="bt" href="/login">Login</a></h4>
-            
-            <img src="../public/img/icons8-menu.svg" alt="burger" />
-          </nav>
-        </div>
-          <br />
-          <main>
-            <br />
-            <h1 style="text-align: center;">Apply for Insurance</h1>
-            
-            <form  action="/apply" method="POST" class="inp">
-              
-             <div class="hr">
-                  <h4>Name</h4>
-                 <input type="text" name="name" id="">
-             </div>       
-             <div class="hr">
-                 <h4>Email</h4>
-                 <input type="text" name="email" id="">
-             </div>
-             <br>
-              <div class="hr">
-                  <h4>Adhar</h4>
-                 <input type="text" name="adhar" id="">
-             </div>       
-             <div class="hr">
-                 <h4>Address</h4>
-                 <input type="text" name="address" id="">
-             </div>
-              <br>
-               <div class="hr">
-                 <h4>Birthday</h4>
-                 <input type="date" name="bday" id="">
-             </div>
-               <div class="hr">
-                   <h4>Gender</h4>
-                  <select class="slt" name="sex" >
-                    <option value="male">Male</option>
-                     <option value="female">Female</option>
-                     <option value="others">Others</option>
-                  </select>
-               </div>
-               <br>
-                 
-              <div class="hr">
-                   <h4>Insurance</h4>
-                    <select class="slt" name="insurance_type" >
-                    <option value="House">House</option>
-                     <option value="Car">Car</option>
-                     <option value="Health">Health</option>
-                  </select>
-               </div>
-                 <div class="hr">
-                 <h4>Phone:</h4>
-                 <input type="text" name="phone" id="">
-               </div>
-                <div class="hr">
-                 <h4>Agent.Id:</h4>
-                 <input type="text" name="agent_id" id="">
-               </div>
-                       <div class="hr">
-                 <h4>Plans</h4>
-                    <select class="slt" name="plan" >
-                    <option value="5">5 Year</option>
-                     <option value="10">10 Year</option>
-                     <option value="15">15 Years</option>
-                     <option value="20">20 Years</option>
-                  </select>
-               </div>
-                <div class="hr">
-                   <h4>Premium</h4>
-                    <select class="slt" name="premium" >
-                    <option value="5">5 Lakhs</option>
-                     <option value="10">10 Lakhs</option>
-                     <option value="15">15 Lakhs</option>
-                     <option value="20">20 Lakhs</option>
-                  </select>
-               </div>
-                <br>
-                      <div class="btn">
-                         <button>Submit</button>
-                      </div>
-    
+              <img src="../public/img/logoasap8.png" alt="" height="50px">
 
-      </form>
-             
-  </body>
+            </div>
+            <h4><a class="bt" href="/index">Home</a></h4>
+            <h4><a class="bt" href="/products">Products</a></h4>
+            <h4><a class="bt" href="../views/Premium Calculator/protection01.html">Premium Calculator</a></h4>
+            <h4><a class="bt" href="/agents">Agents</a></h4>
+            <h4><a class="bt" href="/claim">Policy Claim</a></h4>
+            <h4><a class="bt" href="/grievance">Grievance</a></h4>
+            <h4><a class="bt" href="/help">Help</a></h4>
+            <h4><a class="bt" href="/login">Login</a></h4>
+          </nav>
+
+        </div>
+        <br />
+        <main>
+          <br />
+          <h1 style="text-align: center;">Apply for Insurance</h1>
+
+          <form action="/apply" method="POST" class="inp">
+
+            <div class="hr">
+              <h4>Name</h4>
+              <input type="text" name="name" id="">
+            </div>
+            <div class="hr">
+              <h4>Email</h4>
+              <input type="text" name="email" id="">
+            </div>
+            <br>
+            <div class="hr">
+              <h4>Adhar</h4>
+              <input type="text" name="adhar" id="">
+            </div>
+            <div class="hr">
+              <h4>Address</h4>
+              <input type="text" name="address" id="">
+            </div>
+            <br>
+            <div class="hr">
+              <h4>Birthday</h4>
+              <input type="date" name="bday" id="">
+            </div>
+            <div class="hr">
+              <h4>Gender</h4>
+              <select class="slt" name="sex">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+              </select>
+            </div>
+            <br>
+
+            <div class="hr">
+              <h4>Insurance</h4>
+              <select class="slt" name="insurance_type">
+                <option value="House">House</option>
+                <option value="Car">Car</option>
+                <option value="Health">Health</option>
+              </select>
+            </div>
+            <div class="hr">
+              <h4>Phone:</h4>
+              <input type="text" name="phone" id="">
+            </div>
+            <div class="hr">
+              <h4>Agent.Id:</h4>
+              <input type="text" name="agent_id" id="">
+            </div>
+            <div class="hr">
+              <h4>Plans</h4>
+              <select class="slt" name="plan">
+                <option value="5">5 Year</option>
+                <option value="10">10 Year</option>
+                <option value="15">15 Years</option>
+                <option value="20">20 Years</option>
+              </select>
+            </div>
+            <div class="hr">
+              <h4>Premium</h4>
+              <select class="slt" name="premium">
+                <option value="5">5 Lakhs</option>
+                <option value="10">10 Lakhs</option>
+                <option value="15">15 Lakhs</option>
+                <option value="20">20 Lakhs</option>
+              </select>
+            </div>
+            <br>
+            <div class="btn">
+              <button>Submit</button>
+            </div>
+
+
+          </form>
+
+</body>
+
 </html>

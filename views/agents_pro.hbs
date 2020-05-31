@@ -1,72 +1,81 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>
-		App
+		ASAP Insurance Ltd.
 	</title>
 	<link rel="stylesheet" type="text/css" href="../public/css/profile.css">
-<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+	<link rel="icon" href="../public/img/logoasap2.png">
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
 
 </head>
-<body>
-      <div class="header">
-       	<div class="main">
-       		 <a class="logo" href="/"><img src="../public/img/logoasap8.png"></a>
-       	</div> 
-      <div class="nav-items">
-      	<ul class="log">
-			<li>
-      			<a style="float:right" class="log-btn" href="/logout">Logout</a>
-      		</li>
-      	</ul>
-      </div>
-     </div>
-    <div class="data">
-      <div class="img">
-         <img src="../public/img/profile.png  ">
-      </div>
-      <div class="bio">
-      	   
-           <h5><a class="btn" href="/edit">Edit Profile</a></h5>
-		   <h3>{{name}}</h3>
-		   <h3>CID No : {{cid}}</h3>
-      </div>
-        
-    </div>
-      <div class="plan">
-      	<h2 class="head">My Clients</h2>
-     </div>
-       <hr>
-     <div class="plans">
 
-         {{#each customers}}
-     	  <div class="plans-item">
+<body>
+	<div class="header">
+		<div id="main_nav">
+			<nav>
+				<div id="logo1">
+					<img src="../public/img/logoasap8.png" alt="" height="50px">
+
+				</div>
+				<h4><a class="bt" href="/index">Home</a></h4>
+				<h4><a class="bt" href="/products">Products</a></h4>
+				<h4><a class="bt" href="../views/Premium Calculator/protection01.html">Premium Calculator</a></h4>
+				<h4><a class="bt" href="/apply">Apply Now</a></h4>
+				<h4><a class="bt" href="/agents">Agents</a></h4>
+				<h4><a class="bt" href="/claim">Policy Claim</a></h4>
+				<h4><a class="bt" href="/grievance">Grievance</a></h4>
+				<h4><a class="bt" href="/help">Help</a></h4>
+			</nav>
+
+		</div>
+	</div>
+	<div class="data">
+		<div class="img">
+			<img src="../public/img/profile.png  ">
+		</div>
+		<div class="bio">
+
+			<h5><a class="btn" href="/edit">Edit Profile</a></h5>
+			<h3>{{name}}</h3>
+			<h3>CID No : {{cid}}</h3>
+		</div>
+
+	</div>
+	<div class="plan">
+		<h2 class="head">My Clients</h2>
+	</div>
+	<hr>
+	<div class="plans">
+
+		{{#each customers}}
+		<div class="plans-item">
 			<p>Name : {{name}}</p>
 			<p>Phone : {{phone}}</p>
 			<p>Adhar No : {{adhar}}</p>
-     	  	<p>Insurance Type : {{insurance_type}}</p>
+			<p>Insurance Type : {{insurance_type}}</p>
 			<p>Issue Date : {{date}}</p>
 			<p>Plan : {{plan}} Year Plan</p>
 			<p>Premium Amount : {{plan}} Lakhs</p>
-            <p>Product ID {{product_id}}</p>
-			 <form  action="/delete-product/{{_id}}">
-			  <button class="btn" >Delete Customer</button>
-  
+			<p>Product ID {{product_id}}</p>
+			<form action="/delete-product/{{_id}}">
+				<button class="btn">Delete Customer</button>
+
 			</form>
-			 {{#if confirmed}}
-			   {{else}}
-			    
-					<form action="/confirm-user/{{id}}">
-					 <p>Click Here to Add Client
-					   <button class="btn">Confirm</button>
-					   </p>
-					</form>
-				</
-			   {{/if}}
-     	  </div>
-         {{/each }}
-     	  
- 
-     </div>
+			{{#if confirmed}}
+			{{else}}
+
+			<form action="/confirm-user/{{id}}">
+				<p>Click Here to Add Client
+					<button class="btn">Confirm</button>
+				</p>
+			</form>
+			</ {{/if}} </div>
+			{{/each }}
+
+
+		</div>
 </body>
+
 </html>

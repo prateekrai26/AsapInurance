@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.reportone1{width:20%; font-family:"Lato"; font-size: 14px;font-style:normal; font-weight:400;color:#034ea2;line-height:22px; margin:0% 1% 0 24%; padding:0 0 0% 0; float:left; text-align:left; }
+.reportone2{width:20%; font-family:"Lato"; font-size: 14px;font-style:normal; font-weight:400;color:#034ea2;line-height:22px; margin:0% 1% 0 5%; padding:0 0 0% 0; float:left; text-align:left; }
+
+input[type=radio].css-radio28 {display:none;}
+input[type=radio].css-radio28 + label.css-label28{padding-left:0px; height:130px; width:110px; display:inline-block; line-height:26px; font-size:14px;background-repeat:no-repeat; background-position: 0 0; vertical-align:middle; cursor:pointer;  margin:0 0 0 0;}
+input[type=radio].css-radio28:checked + label.css-label28{background-position:0 0px; background-image:url(../images/female_R.png); background-repeat:no-repeat;}
+label.css-label28{background-image:url(../images/female_N.png); -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; -khtml-user-select:none; -moz-user-select:none; -ms-user-select:none;}
+
+
+input[type=radio].css-radio29 {display:none;}
+input[type=radio].css-radio29 + label.css-label29{padding-left:0px; height:130px; width:110px; display:inline-block; line-height:26px; font-size:14px;background-repeat:no-repeat; background-position: 0 0; vertical-align:middle; cursor:pointer;  margin:0 0 0 0;}
+input[type=radio].css-radio29:checked + label.css-label29{background-position:0 0px; background-image:url(../images/male_R.png); background-repeat:no-repeat; }
+label.css-label29{background-image:url(../images/male_N.png); -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; -khtml-user-select:none; -moz-user-select:none; -ms-user-select:none;}
+
+
+
+.reportone3{width:32%; font-family:"Lato"; font-size: 14px;font-style:normal; font-weight:400;color:#034ea2;line-height:22px; margin:0% 1% 0 14%; padding:0 0 0% 0; float:left; text-align:left; }
+.reportone4{width:32%; font-family:"Lato"; font-size: 14px;font-style:normal; font-weight:400;color:#034ea2;line-height:22px; margin:0% 1% 0 6%; padding:0 0 0% 0; float:left; text-align:left; }
+
+input[type=radio].css-radio30 {display:none;}
+input[type=radio].css-radio30 + label.css-radio30{padding-left:0px; height:130px; width:150px; display:inline-block; line-height:26px; font-size:14px;background-repeat:no-repeat; background-position: 0 0; vertical-align:middle; cursor:pointer;  margin:0 0 0 0;}
+input[type=radio].css-radio30:checked + label.css-radio30{background-position:0 0px; background-image:url(../images/nonSmoke_R.png); background-repeat:no-repeat; }
+label.css-radio30{background-image:url(../images/nonSmoke_N.png); -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; -khtml-user-select:none; -moz-user-select:none; -ms-user-select:none;}
+
+input[type=radio].css-radio31 {display:none;}
+input[type=radio].css-radio31 + label.css-radio31{padding-left:0px; height:130px; width:150px; display:inline-block; line-height:26px; font-size:14px;background-repeat:no-repeat; background-position: 0 0; vertical-align:middle; cursor:pointer;  margin:0 0 0 0;}
+input[type=radio].css-radio31:checked + label.css-radio31{background-position:0 0px; background-image:url(../images/Smoke_R.png); background-repeat:no-repeat; }
+label.css-radio31{background-image:url(../images/Smoke_N.png); -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; -khtml-user-select:none; -moz-user-select:none; -ms-user-select:none;}
+
+
+
+@media only screen 
+and (max-width : 1024px)
+and (min-width : 768px)
+{
+
+	
+}
+
+
+@media only screen 
+and (max-width : 480px)
+{
+.reportone1{width:35%; font-family:"Lato"; font-size: 14px;font-style:normal; font-weight:400;color:#034ea2;line-height:22px; margin:0% 1% 3% 8%; padding:0 0 0% 0; float:left; text-align:left; }
+.reportone2{width:35%; font-family:"Lato"; font-size: 14px;font-style:normal; font-weight:400;color:#034ea2;line-height:22px; margin:0% 1% 0 5%; padding:0 0 0% 0; float:left; text-align:left; }
+
+input[type=radio].css-radio28 {display:none;}
+input[type=radio].css-radio28 + label.css-label28{padding-left:0px; height:130px; width:110px; display:inline-block; line-height:26px; font-size:14px;background-repeat:no-repeat; background-position: 0 0; vertical-align:middle; cursor:pointer;  margin:0 0 0 0;}
+input[type=radio].css-radio28:checked + label.css-label28{background-position:0 0px; background-image:url(../images/female_R.png); background-repeat:no-repeat;}
+label.css-label28{background-image:url(../images/female_N.png); -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; -khtml-user-select:none; -moz-user-select:none; -ms-user-select:none;}
+
+
+input[type=radio].css-radio29 {display:none;}
+input[type=radio].css-radio29 + label.css-label29{padding-left:0px; height:130px; width:110px; display:inline-block; line-height:26px; font-size:14px;background-repeat:no-repeat; background-position: 0 0; vertical-align:middle; cursor:pointer;  margin:0 0 0 0;}
+input[type=radio].css-radio29:checked + label.css-label29{background-position:0 0px; background-image:url(../images/male_R.png); background-repeat:no-repeat; }
+label.css-label29{background-image:url(../images/male_N.png); -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; -khtml-user-select:none; -moz-user-select:none; -ms-user-select:none;}
+
+
+
+.reportone3{width:40%; font-family:"Lato"; font-size: 14px;font-style:normal; font-weight:400;color:#034ea2;line-height:22px; margin:0% 1% 0 0%; padding:0 0 0% 0; float:left; text-align:left; }
+.reportone4{width:40%; font-family:"Lato"; font-size: 14px;font-style:normal; font-weight:400;color:#034ea2;line-height:22px; margin:0% 1% 0 6%; padding:0 0 0% 0; float:left; text-align:left; }
+
+input[type=radio].css-radio30 {display:none;}
+input[type=radio].css-radio30 + label.css-radio30{padding-left:0px; height:130px; width:150px; display:inline-block; line-height:26px; font-size:14px;background-repeat:no-repeat; background-position: 0 0; vertical-align:middle; cursor:pointer;  margin:0 0 0 0;}
+input[type=radio].css-radio30:checked + label.css-radio30{background-position:0 0px; background-image:url(../images/nonSmoke_R.png); background-repeat:no-repeat; }
+label.css-radio30{background-image:url(../images/nonSmoke_N.png); -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; -khtml-user-select:none; -moz-user-select:none; -ms-user-select:none;}
+
+input[type=radio].css-radio31 {display:none;}
+input[type=radio].css-radio31 + label.css-radio31{padding-left:0px; height:130px; width:150px; display:inline-block; line-height:26px; font-size:14px;background-repeat:no-repeat; background-position: 0 0; vertical-align:middle; cursor:pointer;  margin:0 0 0 0;}
+input[type=radio].css-radio31:checked + label.css-radio31{background-position:0 0px; background-image:url(../images/Smoke_R.png); background-repeat:no-repeat; }
+label.css-radio31{background-image:url(../images/Smoke_N.png); -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; -khtml-user-select:none; -moz-user-select:none; -ms-user-select:none;}
+
+	
+}
+
+@media only screen 
+and (max-width : 375px)
+{
+.reportone1{width:35%; font-family:"Lato"; font-size: 14px;font-style:normal; font-weight:400;color:#034ea2;line-height:22px; margin:0% 1% 3% 8%; padding:0 0 0% 0; float:left; text-align:left; }
+.reportone2{width:35%; font-family:"Lato"; font-size: 14px;font-style:normal; font-weight:400;color:#034ea2;line-height:22px; margin:0% 1% 0 5%; padding:0 0 0% 0; float:left; text-align:left; }
+
+input[type=radio].css-radio28 {display:none;}
+input[type=radio].css-radio28 + label.css-label28{padding-left:0px; height:130px; width:110px; display:inline-block; line-height:26px; font-size:14px;background-repeat:no-repeat; background-position: 0 0; vertical-align:middle; cursor:pointer;  margin:0 0 0 0;}
+input[type=radio].css-radio28:checked + label.css-label28{background-position:0 0px; background-image:url(../images/female_R.png); background-repeat:no-repeat;}
+label.css-label28{background-image:url(../images/female_N.png); -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; -khtml-user-select:none; -moz-user-select:none; -ms-user-select:none;}
+
+
+input[type=radio].css-radio29 {display:none;}
+input[type=radio].css-radio29 + label.css-label29{padding-left:0px; height:130px; width:110px; display:inline-block; line-height:26px; font-size:14px;background-repeat:no-repeat; background-position: 0 0; vertical-align:middle; cursor:pointer;  margin:0 0 0 0;}
+input[type=radio].css-radio29:checked + label.css-label29{background-position:0 0px; background-image:url(../images/male_R.png); background-repeat:no-repeat; }
+label.css-label29{background-image:url(../images/male_N.png); -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; -khtml-user-select:none; -moz-user-select:none; -ms-user-select:none;}
+
+
+
+.reportone3{width:44%; font-family:"Lato"; font-size: 14px;font-style:normal; font-weight:400;color:#034ea2;line-height:22px; margin:0% 0% 0 0%; padding:0 0 0% 0; float:left; text-align:left; }
+.reportone4{width:44%; font-family:"Lato"; font-size: 14px;font-style:normal; font-weight:400;color:#034ea2;line-height:22px; margin:0% 1% 0 3%; padding:0 0 0% 0; float:left; text-align:left; }
+
+input[type=radio].css-radio30 {display:none;}
+input[type=radio].css-radio30 + label.css-radio30{padding-left:0px; height:130px; width:150px; display:inline-block; line-height:26px; font-size:14px;background-repeat:no-repeat; background-position: 0 0; vertical-align:middle; cursor:pointer;  margin:0 0 0 0;}
+input[type=radio].css-radio30:checked + label.css-radio30{background-position:0 0px; background-image:url(../images/nonSmoke_R.png); background-repeat:no-repeat; }
+label.css-radio30{background-image:url(../images/nonSmoke_N.png); -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; -khtml-user-select:none; -moz-user-select:none; -ms-user-select:none;}
+
+input[type=radio].css-radio31 {display:none;}
+input[type=radio].css-radio31 + label.css-radio31{padding-left:0px; height:130px; width:150px; display:inline-block; line-height:26px; font-size:14px;background-repeat:no-repeat; background-position: 0 0; vertical-align:middle; cursor:pointer;  margin:0 0 0 0;}
+input[type=radio].css-radio31:checked + label.css-radio31{background-position:0 0px; background-image:url(../images/Smoke_R.png); background-repeat:no-repeat; }
+label.css-radio31{background-image:url(../images/Smoke_N.png); -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; -khtml-user-select:none; -moz-user-select:none; -ms-user-select:none;}
+
+	
+}

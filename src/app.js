@@ -44,3 +44,11 @@ app.listen(port,()=>
     console.log("started at ", 3000 );
 })
 
+function notify(){
+    alert("Your request has been recorded. Your agent will contact you shortly.");
+}
+
+function notify2() {
+    alert("Your complain has been registered. Our team will contact you shortly.");
+}
+
