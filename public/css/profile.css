@@ -24,6 +24,16 @@ label {
 		
 }
 
+.d-btn{
+  margin-top: 20px;
+  width: 250px;
+  background-color: rgb(4, 16, 56);
+  border: none;
+		padding: 10px;
+    border-radius: 10px;
+    
+}
+
 select {
 	margin-top: 20px;
   width: 250px;
