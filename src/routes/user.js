@@ -39,6 +39,15 @@ router.get("/agents", (req, res) => {
 router.get("/calculator", (req, res) => {
   res.render("calculator");
 });
+router.get("/claim", (req, res) => {
+  res.render("claim");
+});
+router.get("/apply", (req, res) => {
+  res.render("apply");
+});
+router.get("/grievance", (req, res) => {
+  res.render("grievance");
+});
 router.get("/profile", auth, async (req, res) => {
   //   await req.user.populate({
   //     path:"tasks",

@@ -22,6 +22,7 @@
 body {
   font-family: PopLight;
   text-align: center;
+  height: 100%;
 }
 
 
@@ -191,6 +192,7 @@ a:hover span:nth-child(4)
     border-radius: 5px;  
     background-color: #fff;
 }
+
 
 .selector input{
   margin:20px;
