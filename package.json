@@ -21,7 +21,7 @@
     "flash": "^1.1.0",
     "flash-express": "^1.0.4",
     "hbs": "^4.1.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^5.8.11",
     "multer": "^1.4.2",
     "nodemailer": "^6.4.5",
